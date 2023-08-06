@@ -205,13 +205,13 @@ main{
 }
 @keyframes pulse-animation {
     0% {
-        color: transparent;
+        box-shadow: 0 0 0 0 rgba(1, 210, 142, 0.4);
     }
-    50% {
-        color: #589167;
+    70% {   
+        box-shadow: 0 0 0 30px rgba(1, 210, 142, 0);
     }
     100% {
-        color: transparent;
+        box-shadow: 0 0 0 0 rgba(1, 210, 142, 0);
     }
 }
 
