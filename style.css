@@ -97,7 +97,6 @@ header .phone a,header .mail a{
         letter-spacing: 2px;
         margin-right: 0px;
     }
-
   }
 
 /* @media screen and (max-width: 767px) {
@@ -108,20 +107,34 @@ header .phone a,header .mail a{
 
   } */
 
-  .navbar-toggler:focus{
-    outline: none;
-    box-shadow: none;
-}
+  .navbar .navbar-toggler:focus,
+  .navbar .navbar-toggler:active,
+  .navbar .navbar-toggler-icon:focus {
+      outline: none;
+      box-shadow: none;
+  }
 /* main */
 main{
     background-image: url('images/bg_1.jpg');
     width: 100%;
     height: 850px;
     background-size: cover;
-    background-repeat: no-repeat;
+   
     position: relative;
     background-attachment: fixed;
+    background-repeat: no-repeat;
 }
+@media only screen and (max-width: 768px) {
+    main {
+ 
+      background-size: auto;
+    background-position: top;
+
+    }
+  }
+  
+  
+  
 .main-content h1{
     font-size: 55px;
     margin-bottom: 25px;
@@ -755,8 +768,15 @@ position: relative;
     color: #333;
     font-weight: 600;
     font-size: 15px;
+    
    
 }
+.form-content form .form-select{
+    color: #333;
+    font-weight: 600;
+    font-size: 15px;
+}
+
 .form-content form input:focus,.form-content form select:focus{
     outline: none;
     box-shadow: none;
@@ -767,12 +787,16 @@ position: relative;
     box-shadow: none;
     border: none;
 }
-.form-content form input,.form-content form select{
+.form-content form input{
     padding: 25px 9px;
+}
+.form-content form select{
+    padding: 15px 9px;
 }
 
 .form-content form textarea{
-    padding: 45px 9px;
+    padding: 9px 9px;
+    padding-bottom: 58px;
 }
 .form-content button{
     width: 100%;
