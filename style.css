@@ -265,7 +265,7 @@ font-weight: 600;
         margin-top: 5%;
         margin-left: 0;
     }
-    .section-1 .text h2,.section-1 .text p{
+    .section-1 .text h2,.section-1 .text p,.section-1 .icon{
     margin-left: 7%;
     margin-right: 10%;
         }
@@ -334,7 +334,7 @@ padding: 40px;
 
 @media screen and (max-width: 767px) {
     .services-section .service-icon{
-        margin-left: 26%;
+        margin-left: 24%;
     }
     
   }
