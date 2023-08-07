@@ -265,7 +265,7 @@ font-weight: 600;
         margin-top: 5%;
         margin-left: 0;
     }
-    .section-1 .text h2,.section-1 .text p,.section-1 .icon{
+    .section-1 .text h2,.section-1 .text p{
     margin-left: 7%;
     margin-right: 10%;
         }
@@ -466,7 +466,8 @@ padding: 40px;
     animation: pulse-animation 2s infinite;
   }
   .service2-section .video-icon i{
-    padding-left: 15px;
+    text-align: center;
+    padding-left: 16px;
     padding-top: 5px;
   }
   .video-icon-content h4{
@@ -708,11 +709,13 @@ font-weight: 600;
   .owl-dots{
   text-align: center;
     margin-top: 8%;
+    
   }
   @media screen and (max-width: 767px) {
     .owl-dots{
         text-align: center;
         margin-top: 12%;
+       
       }
     }
   /* price-section */
