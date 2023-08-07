@@ -615,7 +615,7 @@ padding: 40px;
 @media screen and (max-width: 767px) {
     .testimonial-section{
         padding-top: 12%;
-        margin-bottom: 60%;
+        margin-bottom: 80%;
     }
     .tab-content h2{
         padding-top: 15px;
@@ -714,7 +714,8 @@ font-weight: 600;
   @media screen and (max-width: 767px) {
     .owl-dots{
         text-align: center;
-        margin-top: 12%;
+        margin-top: 15%;
+        
        
       }
     }
