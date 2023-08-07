@@ -33,6 +33,15 @@ header .phone a,header .mail a{
         padding: 0%;
        
     }
+    .social-icons i{
+        margin-left: 20px;
+        margin-top: 0px;
+        margin-bottom: 10px;
+        font-size: 18px;
+    }
+    .social-icons {
+        margin-top: -8px;
+    }
 }
 
 /* navbar */
@@ -59,7 +68,7 @@ header .phone a,header .mail a{
 .navbar .navbar-brand{
     color: #000000;
     font-size: 20px;
-    font-weight: 500;
+    font-weight: 700;
 }
 .navbar .navbar-nav .nav-item a{
     color: #000000;
@@ -76,13 +85,19 @@ header .phone a,header .mail a{
         background-color: #000000;
         border: none;
     } 
+    .navbar{
+       
+        height: 65px;
+    }
     .navbar .navbar-nav .nav-item a{
         color: #fff;
     }
     
     .navbar{
         background-color: #000000;
-        
+    }
+    .navbar.white{
+        background-color: #fff;
     }
     .navbar-collapse{
        width: 100%;
@@ -94,8 +109,8 @@ header .phone a,header .mail a{
         color: rgba(255, 255, 255, 0.5);
         font-weight: 500;
         font-size: 16px;
-        letter-spacing: 2px;
-        margin-right: 0px;
+        letter-spacing: 1px;
+        margin-right: -12px;
     }
   }
 
@@ -392,15 +407,18 @@ padding: 40px;
 }
 @media screen and (max-width: 767px) {
     .service2-section .right-text h1{
-        font-size: 24px !important;
+        font-size: 28px !important;
         margin-bottom: 20px;
+        padding-left: 8px;
     }
     .service2-section .right-text p{
         font-size: 18px;
-       
+        padding-left: 8px;
     }
     .service2-section .right-text h3{
-        font-size: 12px
+        font-size: 12px;
+        letter-spacing: 2px;
+        padding-left: 8px ;
     }
     .service2-section .row{
     /* padding-left: 0px;
@@ -411,29 +429,54 @@ padding: 40px;
         margin-right: -15px;
         margin-left: -15px;
       }
+      .service2-section {
+        margin-top: 20%;
+      }
     
   }
   .service2-section {
     padding-top: 2%;
     padding-bottom: 2%;
+    margin-top: 20%;
   }
+  @keyframes pulse-animation {
+    0% {
+        box-shadow: 0 0 0 0 rgba(1, 210, 142, 0.4);
+    }
+    70% {   
+        box-shadow: 0 0 0 30px rgba(1, 210, 142, 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(1, 210, 142, 0);
+    }
+}
   .service2-section .video-icon {
-    border-radius: 30%;
-    width: 45px;
-    height: 30px;
+   
+    
     background-color: #fff;
     color: #589167;
     border: 1px solid #589167;
+
+    width: 40px;
+    height: 30px;
+    
+    border-radius: 5px;
+    margin-right: 10px;
+  
+    animation: pulse-animation 2s infinite;
   }
   .service2-section .video-icon i{
     padding-left: 15px;
     padding-top: 5px;
   }
   .video-icon-content h4{
-    padding-top: 5px;
+    padding-top: 7px;
     text-transform: uppercase;
     font-size: 13px;
     font-weight: 700;
+  }
+  .video-icon{
+
   }
   @media screen and (min-width: 767px) {
     .video-icon-content{
@@ -517,6 +560,13 @@ padding: 40px;
     }
   }
 
+  .tab-image{
+    background-image: url('images/services-1.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 400px;
+  }
 .nav .nav-item {
     margin-bottom: 15px;
 }
@@ -533,12 +583,12 @@ padding: 40px;
     color: #000000;
     padding: 25px;
 }
-.tab-image img{
+/* .tab-image img{
     width: 100%;
     height: 400px;
     margin-bottom: 20px;
 
-}
+} */
 .tab-content h2{
     font-size: 28px;
     font-weight: 600;
@@ -547,6 +597,7 @@ padding: 40px;
 .tab-content p{
     color: gray;
     font-size: 18px;
+    line-height: 1.8;
     font-family: "Roboto", Arial, sans-serif;
 }
 
@@ -565,7 +616,10 @@ padding: 40px;
         padding-top: 12%;
         margin-bottom: 60%;
     }
+    .tab-content h2{
+        padding-top: 15px;
     
+}
 }
 .overlay{
     position: absolute;
@@ -640,7 +694,7 @@ font-weight: 600;
     font-weight: 400;
     color: gray;
 }
-/* .owl-dots .owl-dot span {
+.owl-dots .owl-dot span {
     width: 15px;
     height: 15px;
     margin: 5px 7px;
@@ -652,9 +706,15 @@ font-weight: 600;
     
   }
   .owl-dots{
-    margin-left: 40%;
-    margin-top: 5%;
-  } */
+  text-align: center;
+    margin-top: 8%;
+  }
+  @media screen and (max-width: 767px) {
+    .owl-dots{
+        text-align: center;
+        margin-top: 12%;
+      }
+    }
   /* price-section */
 
   .price-section{
@@ -705,9 +765,9 @@ font-weight: 600;
     color: #b3b3b3;
 }
 .price-content .price sub {
-    font-size: 18px;
+    font-size: 13px;
     bottom: 0;
-    color: #b3b3b3;
+   
 }
 .price-content h6{
     margin-bottom: 20px;
@@ -723,13 +783,15 @@ font-weight: 600;
 }
 .pricing-text .pricing-list{
     margin-bottom: 20px;
+    font-size: 20px;
     color: #999999;
 }
 .price-content .btn{
     background-color: #589167;
     color: #fff;
-    font-size: 18px;
+    font-size: 17px;
     font-weight: 600;
+    width: 92%;
 }
 .price-content .btn:hover{
     background-color: #589167;
@@ -898,11 +960,14 @@ background-image: url('images/image_3.jpg');
     color: #589167;
     font-size: 30px;
     font-weight: 700;
+    margin-top: 10px;
 }
 .d-m-y .month{
     color: #000000;
-    font-size: 20px;
+    font-size: 16px;
     font-weight: 600;
+    margin-top: -8px;
+    text-transform: uppercase;
 }
 .d-m-y .year{
     color: #999999;
@@ -929,13 +994,19 @@ background-image: url('images/image_3.jpg');
         margin-top: 5%;
         margin-bottom: 10%;
     }
+    
   }
 /* footer */
+
 footer{
     background-color: #1a1a1a;
     padding-top: 5%;
-    
 }
+@media screen and (max-width: 767px) {
+    footer{
+        padding-top: 23%;
+    }
+  }
 footer .social-icons .fa{
 border-radius: 50%;
 background-color: #589167;
@@ -944,6 +1015,10 @@ width: 50px;
 height: 50px;
 margin-left: 2%;
 }
+footer .social-icons{
+    margin-top: 5%;
+  margin-bottom: 10%;
+    }
 
 .counselor-content h5,.explore-content h5{
     color: #fff;
